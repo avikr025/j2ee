@@ -31,7 +31,7 @@ public class FirstServlet extends HttpServlet {
 		response.setContentType("text/html");
 		// Actual logic goes here.
 		PrintWriter out = response.getWriter();
-		out.println("<h1>Hello</h1>");
+		out.println("<h1>Hello World</h1>");
 	}
 
 	/**
@@ -40,7 +40,7 @@ public class FirstServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }
